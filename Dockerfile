@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Копіюємо файли проєкту
-COPY ["Blog_API/Blog API/Blog_API.csproj", "Blog_API/"]
+COPY ["Blog_API/Blog_API.csproj", "Blog_API/"]
 
 # Відновлюємо залежності
 RUN dotnet restore "BlogApi/BlogApi.csproj"
